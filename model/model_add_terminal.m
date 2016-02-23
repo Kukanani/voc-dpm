@@ -29,7 +29,7 @@ function [m, symbol, filterind] = model_add_terminal(m, varargin)
 % your project.
 % -------------------------------------------------------
 
-valid_opts = {'w', 'blocklabel', 'flip', 'mirror_terminal'};
+valid_opts = {'w', 'blocklabel', 'flip', 'mirror_terminal'};rhs
 opts = getopts(varargin, valid_opts);
 
 if opts.isKey('mirror_terminal')
@@ -72,6 +72,6 @@ m.filters(j).flip       = flip;
 [m, i] = model_add_symbol(m, 'T');
 m.symbols(i).filter = j;
 m.filters(j).symbol = i;
-
+rhs
 filterind = j;
 symbol = i;
