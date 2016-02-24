@@ -22,7 +22,7 @@ iou = zeros(num_to_kill+1,1);
 load('VOC2007/bicycle_final');
 model.vis = @() visualizemodel(model, ...
                   1:2:length(model.rules{model.start}));
-im = imread('cyclist2.jpg');
+im = imread('cyclist_pedestrian.jpg');
 figure;
 image(im);
 first_click = ginput(1);

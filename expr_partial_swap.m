@@ -101,7 +101,7 @@ showboxes(im, reduceboxes(model, bs));
 box = reduceboxes(model, bs);
 title('detections');
 disp('detections');
-%disp('press any key to continue'); pause;
+disp('press any key to continue'); pause;
 disp('continuing...');
 
 if model.type == model_types.MixStar
